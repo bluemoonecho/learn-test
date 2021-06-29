@@ -1,6 +1,6 @@
 import {render, fireEvent} from '@testing-library/react'
 
-import Button from './Button';
+import Button from './../Button';
 
 it('checkButtonRender', () => {
     const {queryByTitle} = render(<Button/>);
