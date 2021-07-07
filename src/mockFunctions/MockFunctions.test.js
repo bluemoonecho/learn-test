@@ -14,9 +14,12 @@
 
 
 
-test('add', () => {
+test('add', () => { 
   const addition = jest.fn(() => 3)
   expect(addition(1,2)).toBe(3);
+  expect(addition(1,2)).toBe(3);
+  expect(addition).toHaveBeenCalledTimes(2) 
+  expect(addition).toHaveBeenCalledWith(1,2)
   // expect(addition(5,2)).toBe(7)
 
 })
